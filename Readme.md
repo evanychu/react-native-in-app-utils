@@ -2,6 +2,10 @@
 
 A react-native wrapper for handling in-app purchases in iOS.
 
+## Evan Chu' changes
+
+- Adjust Xcode's header include path.
+
 ## Breaking Change
 
 - Due to a major breaking change in RN 0.40+, use version 5 or higher of this lib when installing from npm.
@@ -112,7 +116,7 @@ InAppUtils.restorePurchases((error, response) => {
       Alert.alert('itunes Error', 'Could not connect to itunes store.');
    } else {
       Alert.alert('Restore Successful', 'Successfully restores all your purchases.');
-      
+
       if (response.length === 0) {
         Alert.alert('No Purchases', "We didn't find any purchases to restore.");
         return;
